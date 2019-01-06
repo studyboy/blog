@@ -1,3 +1,13 @@
 language:php
-php:7.2.13
+php:
+  - 7.2.13
+
+before_script:
+  - composer install
+  - composer dump-autoupload
+  - php artisan key:generate
+ 
+script:
+  - phpunit -v
+
 
