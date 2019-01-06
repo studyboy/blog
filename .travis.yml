@@ -4,7 +4,7 @@ php:
 
 before_script:
   - composer install
-  - composer dump-autoupload
+  - composer dump-autoload
   - php artisan key:generate
  
 script:
