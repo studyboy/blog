@@ -1,6 +1,6 @@
-language:php
+language: php
 php:
-  - 7.2.13
+  - '7.2.13'
 
 before_script:
   - composer install
